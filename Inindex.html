@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InkRush</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <div class="ad top-ad">광고 자리</div>
+
+    <div class="main">
+      <div class="ad side-ad">광고 자리</div>
+
+      <div class="game-box">
+        <h1>InkRush</h1>
+
+        <div class="info">
+          <div>닉네임: <span id="nickname">----</span></div>
+          <div>점수: <span id="score">0</span></div>
+          <div>잉크: <span id="ink">100%</span></div>
+        </div>
+
+        <canvas id="paintCanvas" width="700" height="420"></canvas>
+
+        <button id="startBtn">게임 시작</button>
+        <button id="restartBtn">다시하기</button>
+
+        <h2>랭킹보드</h2>
+        <ol id="rankList"></ol>
+      </div>
+
+      <div class="ad side-ad">광고 자리</div>
+    </div>
+
+    <div class="ad bottom-ad">광고 자리</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
