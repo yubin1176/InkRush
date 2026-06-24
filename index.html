@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InkRush</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InkRush</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+  <h1>InkRush</h1>
 
-    <h1>🎨 InkRush</h1>
+  <p>닉네임: <span id="nickname">----</span></p>
+  <p>점수: <span id="score">0</span></p>
+  <p>잉크: <span id="ink">100%</span></p>
 
-    <p>
-        닉네임 :
-        <span id="nickname"></span>
-    </p>
+  <button id="startBtn">게임 시작</button>
+  <button id="restartBtn">다시하기</button>
 
-    <p>
-        점수 :
-        <span id="score">0</span>
-    </p>
+  <br><br>
 
-    <p>
-        잉크 :
-        <span id="ink">100%</span>
-    </p>
+  <canvas id="paintCanvas" width="700" height="420"></canvas>
 
-    <button id="startBtn">
-        게임 시작
-    </button>
+  <h2>랭킹보드</h2>
+  <ol id="rankList"></ol>
 
-    <button id="restartBtn">
-        다시하기
-    </button>
-
-    <br><br>
-
-    <canvas
-        id="paintCanvas"
-        width="700"
-        height="420">
-    </canvas>
-
-    <h2>🏆 랭킹보드</h2>
-
-    <ol id="rankList"></ol>
-
-    <script src="script.js"></script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
